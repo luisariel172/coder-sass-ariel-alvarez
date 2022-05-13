@@ -1,0 +1,68 @@
+/* Home-Seccion principal (promociones)*/
+main {
+    grid-area: main; }
+  
+  .contenedor-promos {
+    background-color: #b8edb9;
+    padding: 30px; }
+  
+  .promocion {
+    border: 1px solid green;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; }
+  
+  .contenido-promo {
+    padding: 1rem; }
+  
+  /* Home-seccion video */
+  .video {
+    grid-area: video;
+    margin-bottom: 10rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+}
+  
+  /* Home-seccion contacto para solicitar presupuestos */
+  .imagen-contacto {
+    grid-area: imagen-contacto;
+    background-image: url(../img/presupuesto.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem; }
+  
+  .contenido-contacto {
+    color: blue;
+    padding: 10px; 
+    h2 {
+        font-size: 1.5rem; }
+    p {
+        font-size: 1rem;
+        margin: 20px;
+        padding: 20px; }
+}
+  
+  /* Home-seccion caracteristicas destacadas */
+  .contenedor-nosotros {
+    background-color: #add9e9;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  
+  /* Home-seccion nosotros */
+  .contenedor-nosotros {
+    display: flex;
+    flex-direction: column; }
+  
+  .nosotros {
+    grid-area: nosotros;
+    border: 1px solid #1d2de2;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    p {
+        text-align: left; }
+}

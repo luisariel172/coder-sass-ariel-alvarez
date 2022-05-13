@@ -1,0 +1,30 @@
+/* COLORES SUCURSALES */
+.contenedor-sucursal {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    font-size: 20px; }
+  
+  .nombre {
+    grid-area: nombre; }
+  
+  .datos {
+    grid-area: datos; }
+  
+  .foto {
+    grid-area: foto; }
+  
+  .mapa {
+    grid-area: mapa; }
+  
+  .nombre, .datos, .foto, .mapa {
+    padding: 5px;
+    text-align: center; }
+  
+  /* Gradientes diferenciando capital de provincia */
+  .roca, .alem, .ybuena {
+    background: linear-gradient(to bottom, $color-capital 0%, $color-grad 100%); }
+  
+  .concepcion, .aguilares, .alberdi {
+    background: linear-gradient(to bottom, $color-sur 0%, $color-grad 100%); }
+  

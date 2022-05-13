@@ -1,0 +1,39 @@
+/* FOOTER */
+.pie {
+    background-color: $color-basico;
+    /* ayudar al footer que se mantenga al final de la pagina */
+    margin-top: auto;
+    padding: 2px; }
+  
+  .contenedor-footer {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  
+  .derechos {
+    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; }
+  
+  .navegacion-footer a:hover {
+    color: #0000ff; }
+  
+  .navegacion-footer ul {
+    display: flex;
+    padding: 10px;
+    a {
+        padding: 5px; }
+}
+
+  .contenedor-redes {
+    padding-right: 30px;
+    ul {
+        display: flex;
+        li a {
+            padding: 5px; }
+    }
+}

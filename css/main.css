@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.master {
+  /* Estilos de grilla */
+  display: grid;
+  grid-template-areas: "header"
+ "main"
+ "video"
+ "imagen-contacto"
+ "nosotros"
+ "footer"; }
+
+.sucursal {
+  display: grid;
+  grid-template-areas: "nombre"
+ "datos"
+ "foto"
+ "mapa"; }
+
+.marcas {
+  display: grid;
+  grid-template-areas: "marca marca";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  /* ayudar al footer que se mantenga al final de la pagina */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/*GLOBALES*/
+img {
+  max-width: 100%; }
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+/* Posicionar el footer siempre abajo */
+#footer {
+  position: fixed;
+  bottom: 0; }
+
+/*UTILIDADES*/
+.seccion {
+  margin-top: 3rem;
+  margin-bottom: 4rem; }
+
+.fw-300 {
+  font-weight: 300;
+  margin: 1.5rem 0; }
+
+.centrar-texto {
+  text-align: center; }
+
+/* BOTONES */
+.boton {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px; }
+
+.boton-contacto {
+  background-color: #2a91f1; }
+
+/* HEADER */
+header {
+  grid-area: header; }
+
+.encabezado {
+  background-color: #005bb1;
+  padding: 2rem 3rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+  .encabezado .inicio {
+    background-color: #2a91f1;
+    height: 300px; }
+
+.secundario {
+  background-color: #005bb1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo {
+  grid-area: logo; }
+
+.slogan {
+  /* grid-area: slogan; */
+  color: #dd0f0f;
+  font-family: "Zhi Mang Xing", cursive;
+  font-style: italic;
+  font-size: 1rem;
+  /* line-height: 1.5; */
+  display: flex;
+  justify-content: center; }
+
+.navegacion {
+  grid-area: navegacion; }
+
+/*NAVEGACION*/
+/* Barra navegacion bootstrap */
+#neubar {
+  background: #3d85c6;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4); }
+
+.nav-item .active {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #3d85c6, #b2d9f5);
+  box-shadow: 4px 4px 8px #3d85c8,
+ -4px -4px 8px #3d85c9; }
+
+#neubar .dropdown-menu a:hover {
+  color: #454545; }
+
+#neubar .nav-item {
+  margin: auto 4px; }
+
+#neubar a {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+#neubar .dropdown-menu {
+  background: #545454; }
+
+a.navbar-brand {
+  color: #454545; }
+
+/* Navegacion footer */
+ul {
+  list-style: none; }
+  ul li {
+    display: flex;
+    justify-content: center; }
+  ul a {
+    color: #ffffff;
+    text-decoration: none;
+    align-content: center; }
+
+.navegacion li a {
+  text-decoration: none;
+  font-size: 20px; }
+
+.navegacion a:hover {
+  color: red; }
+
+.encabezado.inicio h1 {
+  color: #dd0f0f;
+  font-family: "Zhi Mang Xing", cursive;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center; }
+
+/* Home-Seccion principal (promociones)*/
+main {
+  grid-area: main; }
+
+.contenedor-promos {
+  background-color: #b8edb9;
+  padding: 30px; }
+
+.promocion {
+  border: 1px solid green;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.contenido-promo {
+  padding: 1rem; }
+
+/* Home-seccion video */
+.video {
+  grid-area: video;
+  margin-bottom: 10rem; }
+  .video h2 {
+    font-size: 1.5rem; }
+
+/* Home-seccion contacto para solicitar presupuestos */
+.imagen-contacto {
+  grid-area: imagen-contacto;
+  background-image: url(../img/presupuesto.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 20rem; }
+
+.contenido-contacto {
+  color: blue;
+  padding: 10px; }
+  .contenido-contacto h2 {
+    font-size: 1.5rem; }
+  .contenido-contacto p {
+    font-size: 1rem;
+    margin: 20px;
+    padding: 20px; }
+
+/* Home-seccion caracteristicas destacadas */
+.contenedor-nosotros {
+  background-color: #add9e9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* Home-seccion nosotros */
+.contenedor-nosotros {
+  display: flex;
+  flex-direction: column; }
+
+.nosotros {
+  grid-area: nosotros;
+  border: 1px solid #1d2de2;
+  margin: 5px;
+  padding: 5px;
+  text-align: center; }
+  .nosotros p {
+    text-align: left; }
+
+/* FOOTER */
+.pie {
+  background-color: #3d85c6;
+  /* ayudar al footer que se mantenga al final de la pagina */
+  margin-top: auto;
+  padding: 2px; }
+
+.contenedor-footer {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.derechos {
+  padding-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; }
+
+.navegacion-footer a:hover {
+  color: #0000ff; }
+
+.navegacion-footer ul {
+  display: flex;
+  padding: 10px; }
+  .navegacion-footer ul a {
+    padding: 5px; }
+
+.contenedor-redes {
+  padding-right: 30px; }
+  .contenedor-redes ul {
+    display: flex; }
+    .contenedor-redes ul li a {
+      padding: 5px; }
+
+/* FORMULARIO */
+form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  background-color: #abd8e5;
+  border-radius: 10px; }
+
+input,
+textarea,
+label {
+  padding: 5px; }
+
+/* PAGINA NOSOTROS */
+.xp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px 30px; }
+  .xp p {
+    padding: 30px;
+    line-height: 40px; }
+
+/* PAGINA PRODUCTOS */
+.marca {
+  grid-area: marca;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem; }
+
+/* COLORES SUCURSALES */
+.contenedor-sucursal {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  font-size: 20px; }
+
+.nombre {
+  grid-area: nombre; }
+
+.datos {
+  grid-area: datos; }
+
+.foto {
+  grid-area: foto; }
+
+.mapa {
+  grid-area: mapa; }
+
+.nombre, .datos, .foto, .mapa {
+  padding: 5px;
+  text-align: center; }
+
+/* Gradientes diferenciando capital de provincia */
+.roca, .alem, .ybuena {
+  background: linear-gradient(to bottom, #85cc62 0%, #d5eec3 100%); }
+
+.concepcion, .aguilares, .alberdi {
+  background: linear-gradient(to bottom, #5ad4ce 0%, #d5eec3 100%); }
+
+/*  M E D I A  Q U E R I E S */
+/* HEADER */
+@media screen and (min-width: 768px) {
+  /* UTILIDADES */
+  .seccion {
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
+  .encabezado {
+    padding: 1rem 3rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+  .slogan {
+    grid-area: slogan;
+    font-size: 6rem; }
+  h1 {
+    font-size: 3.4rem; }
+  .secundario {
+    padding: auto; }
+  .logo {
+    grid-area: logo; }
+  .navegacion {
+    grid-area: navegacion; }
+  /*NAVEGACION*/
+  ul li {
+    display: inline;
+    margin: 0 5px; }
+  .navegacion li a {
+    font-size: 25px; }
+  .navegacion a:hover {
+    color: red; }
+  .encabezado.inicio h1 {
+    font-size: 2.8rem;
+    justify-content: flex-start;
+    padding: 0 20px; }
+  /* Home-Seccion principal (promociones)*/
+  .contenedor-promos {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+  .promocion {
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1; }
+  /* Home-seccion video */
+  .video h2 {
+    font-size: 2.3rem;
+    padding: 0; }
+  /* Home-seccion contacto para solicitar presupuestos */
+  .imagen-contacto {
+    height: 30rem; }
+  .contenido-contacto {
+    padding: 20px; }
+    .contenido-contacto p {
+      font-size: 1.5rem; }
+  /* Home-seccion nosotros */
+  .contenedor-nosotros {
+    flex-direction: row;
+    margin: 5px;
+    padding: 3px; }
+  /* FOOTER */
+  .contenedor-footer {
+    justify-content: flex-end; }
+  .derechos {
+    justify-content: start;
+    align-items: center;
+    font-size: 22px; }
+  /* PAGINA NOSOTROS */
+  .xp {
+    flex-direction: row; }
+  .xp p {
+    padding: 30px;
+    line-height: 40px; }
+  /* COLORES SUCURSALES */
+  .contenedor-sucursal {
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .sucursal {
+    display: grid;
+    grid-template-areas: "nombre nombre"
+ "datos datos"
+ "foto mapa";
+    grid-template-rows: 15% 20% 65%;
+    grid-template-columns: 50% 50%; } }

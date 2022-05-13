@@ -1,0 +1,36 @@
+/* HEADER */
+header {
+    grid-area: header; }
+  
+  .encabezado {
+    background-color: #005bb1;
+    padding: 2rem 3rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center; 
+    .inicio {
+        background-color: #2a91f1;
+        height: 300px; }
+}
+
+.secundario {
+    background-color: #005bb1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  
+  .logo {
+    grid-area: logo; }
+  
+  .slogan {
+    /* grid-area: slogan; */
+    color: #dd0f0f;
+    font-family: $fuente-slogan;
+    font-style: italic;
+    font-size: 1rem;
+    /* line-height: 1.5; */
+    display: flex;
+    justify-content: center; }
+  
+  .navegacion {
+    grid-area: navegacion; }

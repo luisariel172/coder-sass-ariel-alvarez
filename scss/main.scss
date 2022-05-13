@@ -1,0 +1,82 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0; }
+    .master {
+        /* Estilos de grilla */
+        display: grid;
+        grid-template-areas: "header"
+       "main"
+       "video"
+       "imagen-contacto"
+       "nosotros"
+       "footer"; }
+      
+      .sucursal {
+        display: grid;
+        grid-template-areas: "nombre"
+       "datos"
+       "foto"
+       "mapa"; }
+      
+      .marcas {
+        display: grid;
+        grid-template-areas: "marca marca";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; }
+      
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 2;
+        /* ayudar al footer que se mantenga al final de la pagina */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; }
+      
+      /*GLOBALES*/
+      img {
+        max-width: 100%; }
+      
+      .contenedor {
+        width: 95%;
+        max-width: 120rem;
+        margin: 0 auto; }
+      
+      /* Posicionar el footer siempre abajo */
+      #footer {
+        position: fixed;
+        bottom: 0; }
+      
+      /*UTILIDADES*/
+      .seccion {
+        margin-top: 3rem;
+        margin-bottom: 4rem; }
+      
+      .fw-300 {
+        font-weight: 300;
+        margin: 1.5rem 0; }
+      
+      .centrar-texto {
+        text-align: center; }
+      
+      /* BOTONES */
+      .boton {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px; }
+      
+      .boton-contacto {
+        background-color: #2a91f1; }
+      
+@import "header";
+@import "navegacion";
+@import "inicio";
+@import "footer";
+@import "form-nos-prod";
+@import "sucursales";
+@import "media";
