@@ -1,0 +1,19 @@
+{
+  "name": "coder-sass-ariel-alvarez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisariel172/coder-sass-ariel-alvarez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisariel172/coder-sass-ariel-alvarez/issues"
+  },
+  "homepage": "https://github.com/luisariel172/coder-sass-ariel-alvarez#readme"
+}
