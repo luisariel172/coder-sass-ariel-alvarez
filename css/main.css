@@ -5,19 +5,11 @@
 .master {
   /* Estilos de grilla */
   display: grid;
-  grid-template-areas: "header"
- "main"
- "video"
- "imagen-contacto"
- "nosotros"
- "footer"; }
+  grid-template-areas: "header" "main" "video" "imagen-contacto" "nosotros" "footer"; }
 
 .sucursal {
   display: grid;
-  grid-template-areas: "nombre"
- "datos"
- "foto"
- "mapa"; }
+  grid-template-areas: "nombre" "datos" "foto" "mapa"; }
 
 .marcas {
   display: grid;
@@ -61,15 +53,14 @@ img {
   text-align: center; }
 
 /* BOTONES */
-.boton {
-  color: #ffffff;
+.boton, .boton-contacto {
   text-decoration: none;
   font-size: 20px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 10px; }
+  padding: 15px 20px;
+  border-radius: 20px; }
 
 .boton-contacto {
+  color: #ffffff;
   background-color: #2a91f1; }
 
 /* HEADER */
@@ -117,8 +108,7 @@ header {
 .nav-item .active {
   border-radius: 6px;
   background: linear-gradient(145deg, #3d85c6, #b2d9f5);
-  box-shadow: 4px 4px 8px #3d85c8,
- -4px -4px 8px #3d85c9; }
+  box-shadow: 4px 4px 8px #3d85c8, -4px -4px 8px #3d85c9; }
 
 #neubar .dropdown-menu a:hover {
   color: #454545; }
@@ -303,6 +293,11 @@ label {
   padding-bottom: 40px;
   font-size: 20px; }
 
+.img-suc {
+  height: 270px;
+  width: 310px;
+  margin: 1px; }
+
 .nombre {
   grid-area: nombre; }
 
@@ -319,11 +314,14 @@ label {
   padding: 5px;
   text-align: center; }
 
-/* Gradientes diferenciando capital de provincia */
-.roca, .alem, .ybuena {
+/* MAPAS con Gradientes diferenciando diferentes areas de la provincia */
+.suc-capital {
+  background: linear-gradient(to bottom, #64b5f3 0%, #d5eec3 100%); }
+
+.suc-ybuena {
   background: linear-gradient(to bottom, #85cc62 0%, #d5eec3 100%); }
 
-.concepcion, .aguilares, .alberdi {
+.suc-sur {
   background: linear-gradient(to bottom, #5ad4ce 0%, #d5eec3 100%); }
 
 /*  M E D I A  Q U E R I E S */
@@ -408,8 +406,6 @@ label {
     justify-content: space-evenly; }
   .sucursal {
     display: grid;
-    grid-template-areas: "nombre nombre"
- "datos datos"
- "foto mapa";
+    grid-template-areas: "nombre nombre" "datos datos" "foto mapa";
     grid-template-rows: 15% 20% 65%;
     grid-template-columns: 50% 50%; } }

@@ -5,6 +5,16 @@
     padding-bottom: 40px;
     font-size: 20px; }
   
+//Mixin para determinar tamaño de fotos y mapas
+  @mixin size-img-suc ($alto, $ancho, $espaciado) {
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+  }
+  .img-suc {
+    @include size-img-suc (270px, 310px, 1px)
+  }
+  
   .nombre {
     grid-area: nombre; }
   
@@ -21,10 +31,16 @@
     padding: 5px;
     text-align: center; }
   
-  /* Gradientes diferenciando capital de provincia */
-  .roca, .alem, .ybuena {
-    background: linear-gradient(to bottom, $color-capital 0%, $color-grad 100%); }
-  
-  .concepcion, .aguilares, .alberdi {
-    background: linear-gradient(to bottom, $color-sur 0%, $color-grad 100%); }
+  /* MAPAS con Gradientes diferenciando diferentes areas de la provincia */
+  $backg-suc: (
+    capital: linear-gradient(to bottom, $color-capital 0%, $color-grad 100%),
+    ybuena: linear-gradient(to bottom, $color-ybuena 0%, $color-grad 100%),  
+    sur: linear-gradient(to bottom, $color-sur 0%, $color-grad 100%)
+);
+
+@each $sucu, $col-sucu in $backg-suc {
+    .suc-#{$sucu} {
+        background: $col-sucu;
+    }
+}
   

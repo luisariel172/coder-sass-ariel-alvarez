@@ -62,17 +62,18 @@
         text-align: center; }
       
       /* BOTONES */
+      // Extend para determinar colores en botones
       .boton {
-        color: #ffffff;
         text-decoration: none;
         font-size: 20px;
-        padding: 10px 20px;
-        margin-top: 20px;
-        border-radius: 10px; }
+        padding: 15px 20px;
+        border-radius: 20px; }
       
       .boton-contacto {
-        background-color: #2a91f1; }
-      
+      @extend .boton;
+      color: #ffffff;
+      background-color: #2a91f1;
+      }
 @import "header";
 @import "navegacion";
 @import "inicio";
