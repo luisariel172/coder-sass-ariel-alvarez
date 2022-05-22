@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta Keywords -->
-    <meta name="keywords" content="red, colores, red de colores, pintureria, trayectoria, compromiso, experiencia, idoneidad, asesoramiento, tucuman, don red">
+    <meta name="keywords"
+        content="red, colores, red de colores, pintureria, trayectoria, compromiso, experiencia, idoneidad, asesoramiento, tucuman, don red">
     <!-- Meta description -->
-    <meta name="description" content="Somos una de las pinturerias con mas antiguedad de Tucuman, reconocidos por nuestra extensa trayectoria y tambien por el compromiso para con nuestros clientes y proveedores.">
+    <meta name="description"
+        content="Somos una de las pinturerias con mas antiguedad de Tucuman, reconocidos por nuestra extensa trayectoria y tambien por el compromiso para con nuestros clientes y proveedores.">
     <!-- Favicon -->
     <link rel="icon" href="../img/favicon.png">
     <!-- titulo de la pagina -->
@@ -57,13 +59,23 @@
             </div>
         </nav>
     </header>
-    <main class="contenedor">
-        <!-- Titulo principal de la pagina -->
-        <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
-        <h2 class="centrar-texto">25 años de Experiencia</h2>
-        <div class="xp">
-            <img src="../img/nosotros.jpg" alt="Imagen Nosotros" width="450" height="450" >
-            
+    <!-- Titulo principal de la pagina -->
+    <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
+    <main class="nos-main">
+        <section class="identidad d-flex flex-wrap align-items-center justify-content-around">
+            <div>
+                <h2 class="text-center">Nuestra identidad registrada</h2>
+                <p>Identificarás a nuestos locales por la típica estructura montada en el frente de cada uno de ellos.
+                </p>
+                <button>
+                    Sucursales
+                </button>
+            </div>
+            <img src="../img/frente.jpg" alt="Imagen formato frente locales.">
+        </section>
+
+        <section class="nos-intro centrar-texto">
+            <h2>30 años de Trayectoria</h2>
             <p><span><strong>PARA VIVIR EL COLOR</strong>, en<strong> Red de Colores</strong> disponemos de una amplia
                     variedad
                     de pintura de automotor, industria y obra, que complementamos con accesorios afines. </span>
@@ -75,12 +87,46 @@
                 atención
                 telefónica y la respuesta on-line
                 A estos fines hemos definido una estrategia de seducción comercial orientada a brindar los mejores
-                beneficios contando con una linea completa de artículos y marcas y con los mejores precios de plaza, con
+                beneficios contando con una linea completa de artículos, marcas y con los mejores precios de plaza, con
                 la convicción de que una vez logrado el contacto, nuestra propuesta será inmejorable. Es precisamente el
                 nivel de aceptación por parte de nuestros clientes, lo que pretendemos sea nuestra principal herramienta
                 de marketing.
             </p>
-        </div>
+        </section>
+        
+        <section class="xp d-flex flex-wrap justify-content-around">
+            <div class="card" style="width:20rem;">
+                <img src="../img/logo.svg" height="400" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Comienzos</h4>
+                    <p class="card-text">Simplemente Red de Colores, con esta imagen nos lanzamos al mercado desde el
+                        primer dia en que abrimos las puertas.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <img src="../img/logo.gif" height="400" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Logo original</h4>
+                    <p class="card-text">Luego de un tiempo de marcado crecimiento dimos vida al primer logotipo que nos
+                        identifica hasta el dia de hoy.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <img src="../img/don-red.png" height="400" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Logo actual</h4>
+                    <p class="card-text">Asi también como toda la empresa, el logotipo también evoluciona, asi nace "Don
+                        Red", nuestra mas reciente forma de darnos a conocer.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </section>
+        <!-- <div class="xp">
+            <img src="../img/nosotros.jpg" alt="Imagen Nosotros" width="450" height="450">
+        </div> -->
     </main>
     <!--inicio footer -->
     <footer class="container-fluid pie">
@@ -141,10 +187,10 @@
         </div>
     </footer>
     <!--fin footer -->
-<!-- Script de bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+    <!-- Script de bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -269,14 +269,24 @@ label {
   padding: 5px; }
 
 /* PAGINA NOSOTROS */
+.nos-main {
+  display: grid;
+  grid-template-areas: 'identidad' 'nos-intro' 'xp'; }
+
+.identidad {
+  grid-area: identidad;
+  padding: 60px 0; }
+
+.nos-intro {
+  grid-area: nos-intro;
+  background: #b8edb9;
+  margin: auto;
+  line-height: 50px;
+  padding: 48px; }
+
 .xp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 40px 30px; }
-  .xp p {
-    padding: 30px;
-    line-height: 40px; }
+  grid-area: xp;
+  padding: 48px; }
 
 /* PAGINA PRODUCTOS */
 .marca {
@@ -316,13 +326,13 @@ label {
 
 /* MAPAS con Gradientes diferenciando diferentes areas de la provincia */
 .suc-capital {
-  background: linear-gradient(to bottom, #64b5f3 0%, #d5eec3 100%); }
+  background: linear-gradient(to bottom, #64b5f3 0%, #b8edb9 100%); }
 
 .suc-ybuena {
-  background: linear-gradient(to bottom, #85cc62 0%, #d5eec3 100%); }
+  background: linear-gradient(to bottom, #85cc62 0%, #b8edb9 100%); }
 
 .suc-sur {
-  background: linear-gradient(to bottom, #5ad4ce 0%, #d5eec3 100%); }
+  background: linear-gradient(to bottom, #5ad4ce 0%, #b8edb9 100%); }
 
 /*  M E D I A  Q U E R I E S */
 /* HEADER */

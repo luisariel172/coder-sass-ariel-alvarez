@@ -12,15 +12,42 @@ form {
     padding: 5px; }
   
   /* PAGINA NOSOTROS */
-  .xp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px 30px; 
-    p {
-        padding: 30px;
-        line-height: 40px; }
+  .nos-main {
+    display: grid;
+    grid-template-areas:
+        'identidad'
+        'nos-intro'
+        'xp';
 }
+// .nos-intro, .identidad, .xp {
+//   border: solid 1px red;}
+.identidad {
+  grid-area: identidad;
+  padding: 60px 0;
+} 
+.nos-intro {
+  grid-area: nos-intro;
+  background: $color-grad;
+  // max-width: 900px;
+  margin:auto;
+  line-height: 50px;
+  padding: 48px;
+}
+
+.xp {
+  grid-area: xp;
+  padding: 48px;
+}
+
+  //   .xp {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 0 40px 30px; 
+//     p {
+//         padding: 30px;
+//         line-height: 40px; }
+// }
   
   /* PAGINA PRODUCTOS */
   .marca {
