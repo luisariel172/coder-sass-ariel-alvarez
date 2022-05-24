@@ -19,18 +19,16 @@ header {
     flex-direction: column;
     align-items: center; }
   
-  .logo {
-    grid-area: logo; }
+.logo {
+  grid-area: logo; }
   
-  .slogan {
-    /* grid-area: slogan; */
-    color: #dd0f0f;
-    font-family: $fuente-slogan;
-    font-style: italic;
-    font-size: 1rem;
-    /* line-height: 1.5; */
-    display: flex;
-    justify-content: center; }
+.slogan {
+  grid-area: slogan;
+  color: #dd0f0f;
+  font-family: $fuente-slogan;
+  font-style: italic;
+  display: flex;
+  justify-content: center; }
   
-  .navegacion {
-    grid-area: navegacion; }
+.navegacion {
+  grid-area: navegacion; }

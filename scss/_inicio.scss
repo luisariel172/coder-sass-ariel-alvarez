@@ -4,24 +4,28 @@ main {
   
   .contenedor-promos {
     background-color: $color-grad;
-    padding: 30px; }
+    padding: 20px; }
   
   .promocion {
-    border: 1px solid green;
+    // border: 1px solid green;
     margin: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column; }
   
   .contenido-promo {
-    padding: 1rem; }
+    padding: 1rem; 
+    h3{
+      font-size: 2.5rem;
+    }
+  }
   
   /* Home-seccion video */
   .video {
     grid-area: video;
     margin-bottom: 10rem;
         h2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 }
   
@@ -46,7 +50,7 @@ main {
   
   /* Home-seccion caracteristicas destacadas */
   .contenedor-nosotros {
-    background-color: #add9e9;
+    // background-color: #add9e9;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -59,10 +63,15 @@ main {
   
   .nosotros {
     grid-area: nosotros;
-    border: 1px solid #1d2de2;
+    // border: 1px solid #1d2de2;
     margin: 5px;
     padding: 5px;
     text-align: center;
     p {
         text-align: left; }
-}
+  }
+
+  .sizeicon {
+    width: 10rem;
+    height: 10rem;
+  }

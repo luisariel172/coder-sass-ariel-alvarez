@@ -9,53 +9,56 @@
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
-    
-.encabezado {
-    padding: 1rem 3rem 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+
+.fw-300 {
+    font-size: 4rem;
 }
     
-.slogan {
-    grid-area: slogan;
-    font-size: 6rem;
-}
+// .encabezado {
+//     padding: 1rem 3rem 3.5rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-content: center;
+// }
+    
+// .slogan {
+//     grid-area: slogan;
+//     }
 h1 {
-    font-size: 3.4rem;
+   font-size: 5rem;
 }
-.secundario {
-    padding: auto;
-}
+// .secundario {
+//     padding: auto;
+// }
 
-.logo {
-    grid-area: logo;
-}
+// .logo {
+//     grid-area: logo;
+// }
 
-.navegacion {
-    grid-area: navegacion;
-}
+// .navegacion {
+//     grid-area: navegacion;
+// }
 
     /*NAVEGACION*/
 
-    ul li {
-        display: inline;
-        margin: 0 5px;
-    }
+    // ul li {
+    //     display: inline;
+    //     margin: 0 5px;
+    // }
 
-    .navegacion li a {
-        font-size: 25px;
-    }
+    // .navegacion li a {
+    //     font-size: 25px;
+    // }
 
-    .navegacion a:hover {
-        color: red;
-    }
+    // .navegacion a:hover {
+    //     color: red;
+    // }
 
-    .encabezado.inicio h1 {
-        font-size: 2.8rem;
-        justify-content: flex-start;
-        padding: 0 20px;
-    }
+    // .encabezado.inicio h1 {
+    //     font-size: 2.8rem;
+    //     justify-content: flex-start;
+    //     padding: 0 20px;
+    // }
 
     /* Home-Seccion principal (promociones)*/
 
@@ -76,7 +79,7 @@ h1 {
 
     /* Home-seccion video */
     .video h2 {
-        font-size: 2.3rem;
+        font-size: 4rem;
         padding: 0;
     }
 

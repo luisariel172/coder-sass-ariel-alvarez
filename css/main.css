@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% = 10px de 16px **/ }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -9,7 +17,9 @@
 
 .sucursal {
   display: grid;
-  grid-template-areas: "nombre" "datos" "foto" "mapa"; }
+  grid-template-areas: "nombre" "datos" "foto" "mapa";
+  padding-bottom: 40px;
+  margin-bottom: 10px; }
 
 .marcas {
   display: grid;
@@ -46,7 +56,7 @@ img {
   margin-bottom: 4rem; }
 
 .fw-300 {
-  font-weight: 300;
+  font-size: 3rem;
   margin: 1.5rem 0; }
 
 .centrar-texto {
@@ -87,12 +97,10 @@ header {
   grid-area: logo; }
 
 .slogan {
-  /* grid-area: slogan; */
+  grid-area: slogan;
   color: #dd0f0f;
   font-family: "Zhi Mang Xing", cursive;
   font-style: italic;
-  font-size: 1rem;
-  /* line-height: 1.5; */
   display: flex;
   justify-content: center; }
 
@@ -159,10 +167,9 @@ main {
 
 .contenedor-promos {
   background-color: #b8edb9;
-  padding: 30px; }
+  padding: 20px; }
 
 .promocion {
-  border: 1px solid green;
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -170,13 +177,15 @@ main {
 
 .contenido-promo {
   padding: 1rem; }
+  .contenido-promo h3 {
+    font-size: 2.5rem; }
 
 /* Home-seccion video */
 .video {
   grid-area: video;
   margin-bottom: 10rem; }
   .video h2 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
 
 /* Home-seccion contacto para solicitar presupuestos */
 .imagen-contacto {
@@ -198,7 +207,6 @@ main {
 
 /* Home-seccion caracteristicas destacadas */
 .contenedor-nosotros {
-  background-color: #add9e9;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -211,12 +219,15 @@ main {
 
 .nosotros {
   grid-area: nosotros;
-  border: 1px solid #1d2de2;
   margin: 5px;
   padding: 5px;
   text-align: center; }
   .nosotros p {
     text-align: left; }
+
+.sizeicon {
+  width: 10rem;
+  height: 10rem; }
 
 /* FOOTER */
 .pie {
@@ -288,6 +299,9 @@ label {
   grid-area: xp;
   padding: 48px; }
 
+.card-nos {
+  width: 26rem; }
+
 /* PAGINA PRODUCTOS */
 .marca {
   grid-area: marca;
@@ -341,34 +355,11 @@ label {
   .seccion {
     margin-top: 6rem;
     margin-bottom: 6rem; }
-  .encabezado {
-    padding: 1rem 3rem 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center; }
-  .slogan {
-    grid-area: slogan;
-    font-size: 6rem; }
+  .fw-300 {
+    font-size: 4rem; }
   h1 {
-    font-size: 3.4rem; }
-  .secundario {
-    padding: auto; }
-  .logo {
-    grid-area: logo; }
-  .navegacion {
-    grid-area: navegacion; }
+    font-size: 5rem; }
   /*NAVEGACION*/
-  ul li {
-    display: inline;
-    margin: 0 5px; }
-  .navegacion li a {
-    font-size: 25px; }
-  .navegacion a:hover {
-    color: red; }
-  .encabezado.inicio h1 {
-    font-size: 2.8rem;
-    justify-content: flex-start;
-    padding: 0 20px; }
   /* Home-Seccion principal (promociones)*/
   .contenedor-promos {
     padding: 10px;
@@ -383,7 +374,7 @@ label {
     flex-shrink: 1; }
   /* Home-seccion video */
   .video h2 {
-    font-size: 2.3rem;
+    font-size: 4rem;
     padding: 0; }
   /* Home-seccion contacto para solicitar presupuestos */
   .imagen-contacto {
