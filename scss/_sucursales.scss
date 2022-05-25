@@ -12,7 +12,9 @@
     margin: $espaciado;
   }
   .img-suc {
-    @include size-img-suc (270px, 310px, 1px)
+    @include size-img-suc (270px, 310px, 1px);
+    border-radius: 5%;
+    border: solid rgb(169, 167, 167) 2px;
   }
   
   .nombre {

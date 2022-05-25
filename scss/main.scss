@@ -2,6 +2,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -75,9 +78,9 @@ max-width: 100%; }
 // Extend para determinar colores en botones
 .boton {
   text-decoration: none;
-  font-size: 20px;
-  padding: 15px 20px;
-  border-radius: 20px; }
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 10px; }
 
 .boton-contacto {
   @extend .boton;

@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /** Reset para REMS - 62.5% = 10px de 16px **/ }
+  /** Reset para REMS - 62.5% = 10px de 16px **/
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -65,9 +68,9 @@ img {
 /* BOTONES */
 .boton, .boton-contacto {
   text-decoration: none;
-  font-size: 20px;
-  padding: 15px 20px;
-  border-radius: 20px; }
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 10px; }
 
 .boton-contacto {
   color: #ffffff;
@@ -287,6 +290,10 @@ label {
 .identidad {
   grid-area: identidad;
   padding: 60px 0; }
+  .identidad p {
+    padding: 0 20px; }
+  .identidad img {
+    margin-top: 20px; }
 
 .nos-intro {
   grid-area: nos-intro;
@@ -320,7 +327,9 @@ label {
 .img-suc {
   height: 270px;
   width: 310px;
-  margin: 1px; }
+  margin: 1px;
+  border-radius: 5%;
+  border: solid #a9a7a7 2px; }
 
 .nombre {
   grid-area: nombre; }
@@ -357,9 +366,12 @@ label {
     margin-bottom: 6rem; }
   .fw-300 {
     font-size: 4rem; }
+  .boton, .boton-contacto {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px; }
   h1 {
     font-size: 5rem; }
-  /*NAVEGACION*/
   /* Home-Seccion principal (promociones)*/
   .contenedor-promos {
     padding: 10px;

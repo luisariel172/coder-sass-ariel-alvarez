@@ -19,11 +19,18 @@ form {
         'nos-intro'
         'xp';
 }
-// .nos-intro, .identidad, .xp {
-//   border: solid 1px red;}
+
 .identidad {
   grid-area: identidad;
   padding: 60px 0;
+  
+  p {
+    padding: 0 20px;
+  }
+  
+  img {
+    margin-top: 20px;
+    }
 } 
 .nos-intro {
   grid-area: nos-intro;
@@ -41,15 +48,6 @@ form {
 .card-nos{
   width: 26rem;
  }
-  //   .xp {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 0 40px 30px; 
-//     p {
-//         padding: 30px;
-//         line-height: 40px; }
-// }
   
   /* PAGINA PRODUCTOS */
   .marca {
