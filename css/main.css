@@ -317,6 +317,34 @@ label {
   justify-content: space-between;
   padding: 4rem; }
 
+.articulos .contenedor-caja {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  padding: 3rem; }
+
+.articulos .contenedor-caja .caja {
+  text-align: center;
+  border: 0.1rem solid #7986c5;
+  padding: 2rem;
+  border-radius: 10px; }
+
+.articulos .contenedor-caja .caja .imagen {
+  padding: 2.5rem 0; }
+
+.articulos .contenedor-caja .caja .imagen img {
+  height: 12rem; }
+
+.articulos .contenedor-caja .caja h3 {
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.articulos .contenedor-caja .caja .content p {
+  font-size: 2rem; }
+
+.articulos .contenedor-caja .caja .content .precio {
+  font-size: 2rem; }
+
 /* COLORES SUCURSALES */
 .contenedor-sucursal {
   display: flex;
