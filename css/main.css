@@ -146,7 +146,8 @@ ul {
   ul a {
     color: #ffffff;
     text-decoration: none;
-    align-content: center; }
+    align-content: center;
+    padding: 20px; }
 
 .navegacion li a {
   text-decoration: none;
@@ -271,7 +272,6 @@ main {
 
 /* FORMULARIO */
 .texto-contacto {
-  grid-area: texto-contacto;
   padding: 40px 0; }
   .texto-contacto h2 {
     padding: 10px;
