@@ -361,6 +361,10 @@ label {
 
 .nombre {
   grid-area: nombre; }
+  .nombre h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px; }
 
 .datos {
   grid-area: datos; }
@@ -387,6 +391,16 @@ label {
 
 /*  M E D I A  Q U E R I E S */
 /* HEADER */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+    background-color: red; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+    background-color: green; } }
+
 @media screen and (min-width: 768px) {
   /* UTILIDADES */
   .seccion {

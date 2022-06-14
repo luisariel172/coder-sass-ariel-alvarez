@@ -18,7 +18,13 @@
   }
   
   .nombre {
-    grid-area: nombre; }
+    grid-area: nombre;
+              h2 {
+                font-size: 3rem;
+                font-weight: bold;
+                margin-top: 10px;
+               }
+  }
   
   .datos {
     grid-area: datos; }
