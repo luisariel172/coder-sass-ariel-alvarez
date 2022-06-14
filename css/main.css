@@ -199,12 +199,12 @@ main {
   height: 20rem; }
 
 .contenido-contacto {
-  color: blue;
+  color: #1d1d7e;
   padding: 10px; }
   .contenido-contacto h2 {
-    font-size: 1.5rem; }
+    font-size: 3rem; }
   .contenido-contacto p {
-    font-size: 1rem;
+    font-size: 2.5rem;
     margin: 20px;
     padding: 20px; }
 
@@ -270,6 +270,19 @@ main {
       padding: 5px; }
 
 /* FORMULARIO */
+.texto-contacto {
+  grid-area: texto-contacto;
+  padding: 40px 0; }
+  .texto-contacto h2 {
+    padding: 10px;
+    font-size: 3rem;
+    color: red; }
+
+.texto-contacto p {
+  padding: 20px;
+  font-size: 2rem;
+  color: #206b93; }
+
 form {
   margin: 0 auto;
   padding: 20px;
@@ -393,13 +406,11 @@ label {
 /* HEADER */
 @media (max-width: 768px) {
   html {
-    font-size: 55%;
-    background-color: red; } }
+    font-size: 55%; } }
 
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
-    background-color: green; } }
+    font-size: 50%; } }
 
 @media screen and (min-width: 768px) {
   /* UTILIDADES */

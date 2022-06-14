@@ -1,4 +1,20 @@
 /* FORMULARIO */
+.texto-contacto {
+  grid-area: texto-contacto;
+  padding: 40px 0; 
+  h2 {
+    padding: 10px;
+    font-size: 3rem;
+    color: red;
+  }
+}
+  .texto-contacto {
+   p {
+    padding: 20px;  
+    font-size: 2rem;
+    color: rgb(32, 107, 147); }
+   }
+
 form {
     margin: 0 auto;
     padding: 20px;
@@ -35,7 +51,6 @@ form {
 .nos-intro {
   grid-area: nos-intro;
   background: $color-grad;
-  // max-width: 900px;
   margin:auto;
   line-height: 50px;
   padding: 48px;
@@ -104,15 +119,17 @@ form {
         }
       }
     }
-  
 
-  .articulos { 
+    .articulos { 
    .contenedor-caja {
     .caja {
      .content {
      p {
          font-size: 2rem; }
-     }}}}
+     }
+    }
+  }
+}
 
     .articulos {
      .contenedor-caja {
@@ -120,4 +137,7 @@ form {
        .content {
         .precio {
          font-size: 2rem; }
-        }}}}
+        }
+      }
+    }
+  }

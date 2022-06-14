@@ -38,19 +38,18 @@ main {
     height: 20rem; }
   
   .contenido-contacto {
-    color: blue;
+    color: rgb(29, 29, 126);
     padding: 10px; 
     h2 {
-        font-size: 1.5rem; }
+        font-size: 3rem; }
     p {
-        font-size: 1rem;
+        font-size: 2.5rem;
         margin: 20px;
         padding: 20px; }
 }
   
   /* Home-seccion caracteristicas destacadas */
   .contenedor-nosotros {
-    // background-color: #add9e9;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -63,7 +62,6 @@ main {
   
   .nosotros {
     grid-area: nosotros;
-    // border: 1px solid #1d2de2;
     margin: 5px;
     padding: 5px;
     text-align: center;
