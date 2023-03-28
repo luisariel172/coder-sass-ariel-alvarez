@@ -1,4 +1,19 @@
 /* FORMULARIO */
+.texto-contacto {
+  padding: 40px 0; 
+  h2 {
+    padding: 10px;
+    font-size: 3rem;
+    color: red;
+  }
+}
+  .texto-contacto {
+   p {
+    padding: 20px;  
+    font-size: 2rem;
+    color: rgb(32, 107, 147); }
+   }
+
 form {
     margin: 0 auto;
     padding: 20px;
@@ -12,15 +27,41 @@ form {
     padding: 5px; }
   
   /* PAGINA NOSOTROS */
-  .xp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px 30px; 
-    p {
-        padding: 30px;
-        line-height: 40px; }
+  .nos-main {
+    display: grid;
+    grid-template-areas:
+        'identidad'
+        'nos-intro'
+        'xp';
 }
+
+.identidad {
+  grid-area: identidad;
+  padding: 60px 0;
+  
+  p {
+    padding: 0 20px;
+  }
+  
+  img {
+    margin-top: 20px;
+    }
+} 
+.nos-intro {
+  grid-area: nos-intro;
+  background: $color-grad;
+  margin:auto;
+  line-height: 50px;
+  padding: 48px;
+}
+
+.xp {
+  grid-area: xp;
+  padding: 48px;
+}
+.card-nos{
+  width: 26rem;
+ }
   
   /* PAGINA PRODUCTOS */
   .marca {
@@ -29,4 +70,73 @@ form {
     flex-direction: row;
     justify-content: space-between;
     padding: 4rem; }
-  
+
+    .articulos{ 
+      .contenedor-caja {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem; 
+        padding: 3rem;
+      }
+    }
+      .articulos {
+        .contenedor-caja {
+           .caja {
+            text-align: center;
+            border: 0.1rem solid rgb(121, 134, 197);
+            padding: 2rem;
+            border-radius: 10px;
+          }
+        }
+    }
+      
+      .articulos {
+        .contenedor-caja{
+          .caja{
+             .imagen {
+          padding: 2.5rem 0; }
+             }
+            }
+          }    
+      .articulos{
+       .contenedor-caja {
+        .caja {
+         .imagen {
+          img {
+            height: 12rem; }
+          }
+        }
+      }
+    }
+      .articulos { 
+        .contenedor-caja {
+           .caja {
+              h3 {
+                font-size: 2.5rem;
+                font-weight: bold;
+         }
+        }
+      }
+    }
+
+    .articulos { 
+   .contenedor-caja {
+    .caja {
+     .content {
+     p {
+         font-size: 2rem; }
+     }
+    }
+  }
+}
+
+    .articulos {
+     .contenedor-caja {
+      .caja {
+       .content {
+        .precio {
+         font-size: 2rem; }
+        }
+      }
+    }
+  }

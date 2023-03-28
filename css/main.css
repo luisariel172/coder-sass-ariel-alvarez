@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% = 10px de 16px **/
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -5,19 +16,13 @@
 .master {
   /* Estilos de grilla */
   display: grid;
-  grid-template-areas: "header"
- "main"
- "video"
- "imagen-contacto"
- "nosotros"
- "footer"; }
+  grid-template-areas: "header" "main" "video" "imagen-contacto" "nosotros" "footer"; }
 
 .sucursal {
   display: grid;
-  grid-template-areas: "nombre"
- "datos"
- "foto"
- "mapa"; }
+  grid-template-areas: "nombre" "datos" "foto" "mapa";
+  padding-bottom: 40px;
+  margin-bottom: 10px; }
 
 .marcas {
   display: grid;
@@ -54,22 +59,21 @@ img {
   margin-bottom: 4rem; }
 
 .fw-300 {
-  font-weight: 300;
+  font-size: 3rem;
   margin: 1.5rem 0; }
 
 .centrar-texto {
   text-align: center; }
 
 /* BOTONES */
-.boton {
-  color: #ffffff;
+.boton, .boton-contacto {
   text-decoration: none;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px 15px;
   border-radius: 10px; }
 
 .boton-contacto {
+  color: #ffffff;
   background-color: #2a91f1; }
 
 /* HEADER */
@@ -96,12 +100,10 @@ header {
   grid-area: logo; }
 
 .slogan {
-  /* grid-area: slogan; */
+  grid-area: slogan;
   color: #dd0f0f;
   font-family: "Zhi Mang Xing", cursive;
   font-style: italic;
-  font-size: 1rem;
-  /* line-height: 1.5; */
   display: flex;
   justify-content: center; }
 
@@ -117,8 +119,7 @@ header {
 .nav-item .active {
   border-radius: 6px;
   background: linear-gradient(145deg, #3d85c6, #b2d9f5);
-  box-shadow: 4px 4px 8px #3d85c8,
- -4px -4px 8px #3d85c9; }
+  box-shadow: 4px 4px 8px #3d85c8, -4px -4px 8px #3d85c9; }
 
 #neubar .dropdown-menu a:hover {
   color: #454545; }
@@ -145,7 +146,8 @@ ul {
   ul a {
     color: #ffffff;
     text-decoration: none;
-    align-content: center; }
+    align-content: center;
+    padding: 20px; }
 
 .navegacion li a {
   text-decoration: none;
@@ -169,10 +171,9 @@ main {
 
 .contenedor-promos {
   background-color: #b8edb9;
-  padding: 30px; }
+  padding: 20px; }
 
 .promocion {
-  border: 1px solid green;
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -180,13 +181,15 @@ main {
 
 .contenido-promo {
   padding: 1rem; }
+  .contenido-promo h3 {
+    font-size: 2.5rem; }
 
 /* Home-seccion video */
 .video {
   grid-area: video;
   margin-bottom: 10rem; }
   .video h2 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
 
 /* Home-seccion contacto para solicitar presupuestos */
 .imagen-contacto {
@@ -197,18 +200,17 @@ main {
   height: 20rem; }
 
 .contenido-contacto {
-  color: blue;
+  color: #1d1d7e;
   padding: 10px; }
   .contenido-contacto h2 {
-    font-size: 1.5rem; }
+    font-size: 3rem; }
   .contenido-contacto p {
-    font-size: 1rem;
+    font-size: 2.5rem;
     margin: 20px;
     padding: 20px; }
 
 /* Home-seccion caracteristicas destacadas */
 .contenedor-nosotros {
-  background-color: #add9e9;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -221,12 +223,15 @@ main {
 
 .nosotros {
   grid-area: nosotros;
-  border: 1px solid #1d2de2;
   margin: 5px;
   padding: 5px;
   text-align: center; }
   .nosotros p {
     text-align: left; }
+
+.sizeicon {
+  width: 10rem;
+  height: 10rem; }
 
 /* FOOTER */
 .pie {
@@ -266,6 +271,18 @@ main {
       padding: 5px; }
 
 /* FORMULARIO */
+.texto-contacto {
+  padding: 40px 0; }
+  .texto-contacto h2 {
+    padding: 10px;
+    font-size: 3rem;
+    color: red; }
+
+.texto-contacto p {
+  padding: 20px;
+  font-size: 2rem;
+  color: #206b93; }
+
 form {
   margin: 0 auto;
   padding: 20px;
@@ -279,14 +296,31 @@ label {
   padding: 5px; }
 
 /* PAGINA NOSOTROS */
+.nos-main {
+  display: grid;
+  grid-template-areas: 'identidad' 'nos-intro' 'xp'; }
+
+.identidad {
+  grid-area: identidad;
+  padding: 60px 0; }
+  .identidad p {
+    padding: 0 20px; }
+  .identidad img {
+    margin-top: 20px; }
+
+.nos-intro {
+  grid-area: nos-intro;
+  background: #b8edb9;
+  margin: auto;
+  line-height: 50px;
+  padding: 48px; }
+
 .xp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 40px 30px; }
-  .xp p {
-    padding: 30px;
-    line-height: 40px; }
+  grid-area: xp;
+  padding: 48px; }
+
+.card-nos {
+  width: 26rem; }
 
 /* PAGINA PRODUCTOS */
 .marca {
@@ -296,6 +330,34 @@ label {
   justify-content: space-between;
   padding: 4rem; }
 
+.articulos .contenedor-caja {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  padding: 3rem; }
+
+.articulos .contenedor-caja .caja {
+  text-align: center;
+  border: 0.1rem solid #7986c5;
+  padding: 2rem;
+  border-radius: 10px; }
+
+.articulos .contenedor-caja .caja .imagen {
+  padding: 2.5rem 0; }
+
+.articulos .contenedor-caja .caja .imagen img {
+  height: 12rem; }
+
+.articulos .contenedor-caja .caja h3 {
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.articulos .contenedor-caja .caja .content p {
+  font-size: 2rem; }
+
+.articulos .contenedor-caja .caja .content .precio {
+  font-size: 2rem; }
+
 /* COLORES SUCURSALES */
 .contenedor-sucursal {
   display: flex;
@@ -303,8 +365,19 @@ label {
   padding-bottom: 40px;
   font-size: 20px; }
 
+.img-suc {
+  height: 270px;
+  width: 310px;
+  margin: 1px;
+  border-radius: 5%;
+  border: solid #a9a7a7 2px; }
+
 .nombre {
   grid-area: nombre; }
+  .nombre h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px; }
 
 .datos {
   grid-area: datos; }
@@ -319,48 +392,39 @@ label {
   padding: 5px;
   text-align: center; }
 
-/* Gradientes diferenciando capital de provincia */
-.roca, .alem, .ybuena {
-  background: linear-gradient(to bottom, #85cc62 0%, #d5eec3 100%); }
+/* MAPAS con Gradientes diferenciando diferentes areas de la provincia */
+.suc-capital {
+  background: linear-gradient(to bottom, #64b5f3 0%, #b8edb9 100%); }
 
-.concepcion, .aguilares, .alberdi {
-  background: linear-gradient(to bottom, #5ad4ce 0%, #d5eec3 100%); }
+.suc-ybuena {
+  background: linear-gradient(to bottom, #85cc62 0%, #b8edb9 100%); }
+
+.suc-sur {
+  background: linear-gradient(to bottom, #5ad4ce 0%, #b8edb9 100%); }
 
 /*  M E D I A  Q U E R I E S */
 /* HEADER */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; } }
+
 @media screen and (min-width: 768px) {
   /* UTILIDADES */
   .seccion {
     margin-top: 6rem;
     margin-bottom: 6rem; }
-  .encabezado {
-    padding: 1rem 3rem 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center; }
-  .slogan {
-    grid-area: slogan;
-    font-size: 6rem; }
+  .fw-300 {
+    font-size: 4rem; }
+  .boton, .boton-contacto {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px; }
   h1 {
-    font-size: 3.4rem; }
-  .secundario {
-    padding: auto; }
-  .logo {
-    grid-area: logo; }
-  .navegacion {
-    grid-area: navegacion; }
-  /*NAVEGACION*/
-  ul li {
-    display: inline;
-    margin: 0 5px; }
-  .navegacion li a {
-    font-size: 25px; }
-  .navegacion a:hover {
-    color: red; }
-  .encabezado.inicio h1 {
-    font-size: 2.8rem;
-    justify-content: flex-start;
-    padding: 0 20px; }
+    font-size: 5rem; }
   /* Home-Seccion principal (promociones)*/
   .contenedor-promos {
     padding: 10px;
@@ -375,7 +439,7 @@ label {
     flex-shrink: 1; }
   /* Home-seccion video */
   .video h2 {
-    font-size: 2.3rem;
+    font-size: 4rem;
     padding: 0; }
   /* Home-seccion contacto para solicitar presupuestos */
   .imagen-contacto {
@@ -408,8 +472,6 @@ label {
     justify-content: space-evenly; }
   .sucursal {
     display: grid;
-    grid-template-areas: "nombre nombre"
- "datos datos"
- "foto mapa";
+    grid-template-areas: "nombre nombre" "datos datos" "foto mapa";
     grid-template-rows: 15% 20% 65%;
     grid-template-columns: 50% 50%; } }
